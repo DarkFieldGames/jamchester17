@@ -170,6 +170,7 @@ QualitySettings:
     PSP2: 2
     Samsung TV: 2
     Standalone: 5
+    Switch: 5
     Tizen: 2
     Web: 5
     WebGL: 3
