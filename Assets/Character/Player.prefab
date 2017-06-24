@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 50400134448554582}
   - component: {fileID: 114942628978035196}
   - component: {fileID: 114784513532672336}
+  - component: {fileID: 114789375392584440}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -321,6 +322,21 @@ MonoBehaviour:
     maxNormalAngle: 0
   HoldPoint: {fileID: 4515354988185752}
   DropPoint: {fileID: 4612156680651334}
+--- !u!114 &114789375392584440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937445049164168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04adc5a8696494b2385763b76ff8a25f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 100
+  healthLossRate: 1
+  loosing_life: 1
 --- !u!114 &114942628978035196
 MonoBehaviour:
   m_ObjectHideFlags: 1
