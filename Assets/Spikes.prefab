@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4285806865635022}
   - component: {fileID: 212964642486834696}
   - component: {fileID: 61250259811609242}
+  - component: {fileID: 114723794450861832}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: ExitDoor
@@ -39,7 +40,7 @@ GameObject:
   - component: {fileID: 212586623745108188}
   - component: {fileID: 61146502274005904}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Spikething
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495063948344714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalPosition: {x: 0, y: 0.08, z: 100}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children: []
   m_Father: {fileID: 4285806865635022}
@@ -84,7 +85,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.25798887}
+  m_Offset: {x: 0, y: -0.18186086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -95,7 +96,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.76402223}
+  m_Size: {x: 1.28, y: 0.91627824}
   m_EdgeRadius: 0
 --- !u!61 &61250259811609242
 BoxCollider2D:
@@ -106,10 +107,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042216778, y: -0.42216682}
+  m_Offset: {x: 0.042216778, y: -0.10955715}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,8 +121,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6417518, y: 1.5011339}
+  m_Size: {x: 2.6417518, y: 2.1263533}
   m_EdgeRadius: 0
+--- !u!114 &114723794450861832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282615775305816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f43d6df0e7de846bc4cc9496735cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212586623745108188
 SpriteRenderer:
   m_ObjectHideFlags: 1
