@@ -210,10 +210,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1123804235}
-  damping: 0.1
-  lookAheadFactor: 0.1
-  lookAheadReturnSpeed: 0.1
-  lookAheadMoveThreshold: 0.1
+  damping: 0.3
+  lookAheadFactor: 0.3
+  lookAheadReturnSpeed: 0.4
+  lookAheadMoveThreshold: 0.3
 --- !u!1 &1089121129
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,9 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41ebf071ee076ce469a195b2df9dd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn_x: 0
-  spawn_y: 0
-  lives: 10
 --- !u!4 &1089121131
 Transform:
   m_ObjectHideFlags: 0
@@ -278,10 +275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df467c299d8f32439f068b7477a65d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 100
-  healthLossRate: 2
-  loosing_life: 1
 --- !u!1001 &1544901381
 Prefab:
   m_ObjectHideFlags: 0
