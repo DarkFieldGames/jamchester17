@@ -40,8 +40,11 @@ namespace UnityStandardAssets._2D
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
             for (int i = 0; i < colliders.Length; i++)
             {
-                if (colliders[i].gameObject != gameObject)
-                    m_Grounded = true;
+				if (colliders[i].gameObject != gameObject)
+				{
+					m_Grounded = true;
+					break;
+				}
             }
            // m_Anim.SetBool("Ground", m_Grounded);
 
