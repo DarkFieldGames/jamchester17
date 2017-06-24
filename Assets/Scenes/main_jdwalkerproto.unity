@@ -153,6 +153,21 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 2032051468}
+    - target: {fileID: 20651265691183510, guid: 7347f6f6c4ca8ba488affb59887abe27,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20651265691183510, guid: 7347f6f6c4ca8ba488affb59887abe27,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20651265691183510, guid: 7347f6f6c4ca8ba488affb59887abe27,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7347f6f6c4ca8ba488affb59887abe27, type: 2}
   m_IsPrefabParent: 0
@@ -295,11 +310,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224471903773619742, guid: 5ed8b3c57c658c84fa3ec554a8d1ed62,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 223
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ed8b3c57c658c84fa3ec554a8d1ed62, type: 2}
   m_IsPrefabParent: 0
@@ -397,22 +407,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 825aef9e3825f8a40b285395b521c24d, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1389589732 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1303377166669228, guid: 5ed8b3c57c658c84fa3ec554a8d1ed62,
-    type: 2}
-  m_PrefabInternal: {fileID: 728545380}
---- !u!114 &1389589736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1389589732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 602272c2238aaef409807112634781df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1476678102
 Prefab:
   m_ObjectHideFlags: 0
