@@ -8,6 +8,7 @@ TagManager:
   - DeadPlayer
   - GameLogic
   - ExitDoor
+  - Spikes
   layers:
   - Default
   - TransparentFX

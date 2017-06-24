@@ -57,7 +57,9 @@ MonoBehaviour:
   player_x: 0
   player_y: 0
   next_level: level2
+  healthLossRate: 1
   level_won: 0
+  level_description: 
   NewPlayer: {fileID: 1937445049164168, guid: e940c5af9635dad4ea30ea54a6189afe, type: 2}
   DeadPlayer: {fileID: 1267728294423942, guid: adff981a58539b7448ef29b0f5122ddd, type: 2}
   ExitDoor: {fileID: 0}
