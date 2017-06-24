@@ -191,6 +191,7 @@ MonoBehaviour:
   lookAheadFactor: 0.3
   lookAheadReturnSpeed: 0.4
   lookAheadMoveThreshold: 0.3
+  y_offset: 0.15
 --- !u!124 &124553729369611964
 Behaviour:
   m_ObjectHideFlags: 1
