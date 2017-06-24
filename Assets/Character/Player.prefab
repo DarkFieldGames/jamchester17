@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4515354988185752}
   m_Layer: 0
-  m_Name: GrabPoint
+  m_Name: HoldPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937445049164168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06568106, y: 0, z: 0}
+  m_LocalPosition: {x: -3.06, y: -1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4452379448071982}
@@ -142,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1043604727503882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.28, z: 0}
+  m_LocalPosition: {x: 0, y: 4.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4479587774041096}
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
-  k_GroundedRadius: 0.5
-  k_CeilingRadius: 0.01
+  k_GroundedRadius: 1
+  k_CeilingRadius: 0.5
 --- !u!114 &114784513532672336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,6 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1c90c682de4ea4897ddd3f33f1582c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrabRadius: 5
+  GrabbedObject: {fileID: 0}
 --- !u!114 &114942628978035196
 MonoBehaviour:
   m_ObjectHideFlags: 1
