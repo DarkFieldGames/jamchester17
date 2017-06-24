@@ -13,7 +13,6 @@ public class GameMechanics : MonoBehaviour {
 		
 	}
 
-	void Kill
 	
 	// Update is called once per frame
 	void Update () {
