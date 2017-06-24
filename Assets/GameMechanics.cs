@@ -7,14 +7,16 @@ public class GameMechanics : MonoBehaviour {
 	public float spawn_x = 0.0f;
 	public float spawn_y = 0.0f;
 	public int lives = 10;
-	public GameObject ActivePlayer = GameObject.FindGameObjectWithTag("Player");
-	public GameObject DeadPlayer = GameObject.FindGameObjectWithTag("DeadPlayer");
 	public float player_x = 0.0f;
 	public float player_y = 0.0f;
 
+	private GameObject ActivePlayer;
+	private GameObject DeadPlayer;
+
 	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+		ActivePlayer = GameObject.FindGameObjectWithTag("Player");
+		DeadPlayer = GameObject.FindGameObjectWithTag("DeadPlayer");
 	}
 
 	void KillPlayer() {
