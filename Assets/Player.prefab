@@ -54,7 +54,8 @@ GameObject:
   - component: {fileID: 114198675504496156}
   - component: {fileID: 50775512551052450}
   - component: {fileID: 114266857668745166}
-  - component: {fileID: 114772111477534618}
+  - component: {fileID: 114550777428393352}
+  - component: {fileID: 114010437356687454}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -206,6 +207,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &114010437356687454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241813108288844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04adc5a8696494b2385763b76ff8a25f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 100
+  healthLossRate: 1
+  loosing_life: 1
 --- !u!114 &114198675504496156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114772111477534618
+--- !u!114 &114550777428393352
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -245,13 +261,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1241813108288844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df467c299d8f32439f068b7477a65d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 100
-  healthLossRate: 2
-  loosing_life: 1
+  target: {fileID: 0}
+  damping: 0.3
+  lookAheadFactor: 0.3
+  lookAheadReturnSpeed: 0.4
+  lookAheadMoveThreshold: 0.3
 --- !u!212 &212008349426435870
 SpriteRenderer:
   m_ObjectHideFlags: 1
