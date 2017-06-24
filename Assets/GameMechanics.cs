@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets._2D;
+using UnityEngine.SceneManagement;
 
 public class GameMechanics : MonoBehaviour {
 
@@ -10,12 +11,17 @@ public class GameMechanics : MonoBehaviour {
 	public int lives = 10;
 	public float player_x = 0.0f;
 	public float player_y = 0.0f;
+	public string next_level = "level2";
+	public float healthLossRate = 1.0f; // loss of health per second
+	public bool level_won = false;
 
+	public string level_description = "";
 	private float active_player_health = 100.0f;
 
 	private GameObject ActivePlayer;
 	public GameObject NewPlayer;
 	public GameObject DeadPlayer;
+	public GameObject ExitDoor;
 
 	private GameObject Camera;
 	private Camera2DFollow camera_logic;
@@ -24,8 +30,25 @@ public class GameMechanics : MonoBehaviour {
 	void Awake () {
 		ActivePlayer = GameObject.FindGameObjectWithTag("Player");
 		Camera = GameObject.FindGameObjectWithTag ("MainCamera");
+		ExitDoor = GameObject.FindGameObjectWithTag ("ExitDoor");
+		level_won = false;
+		SetupLevel ();
 //		NewPlayer = Resources.Load ("Player") as GameObject;
 //		DeadPlayer = Resources.Load("DeadPlayer") as GameObject;
+	}
+
+	void SetupLevel() {
+		Scene scene = SceneManager.GetActiveScene();
+		if (scene.name == "level1") {
+			lives = 2;
+			healthLossRate = 0.2f;
+			level_description = "Stand on the shoulders of giants. Or grab the box with Q.";
+		}
+		if (scene.name == "level2") {
+			lives = 3;
+			healthLossRate = 1.0f;
+			level_description = "Let the efforts of the past generation guide you forward. Press 'K' to give your life to help.";
+		}
 	}
 
 	void KillPlayer() {
@@ -51,6 +74,17 @@ public class GameMechanics : MonoBehaviour {
 		Debug.Log (lives);
 		//GameObject.FindGameObjectWithTag("Player"); // always refresh who the player is incase it dies
 	}
+
+	void NextLevel(){
+		Debug.Log ("next level");
+		SceneManager.LoadScene(next_level);
+		level_won = false;		
+	}
+
+	void OnTriggerEnter(Collider other) {
+		Debug.Log("OnTriggerEnter");
+		Debug.Log(other.gameObject);
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -63,6 +97,18 @@ public class GameMechanics : MonoBehaviour {
 				// get player location.. kill it, place a dead player in its place
 				KillPlayer ();
 			}
+			if (ActivePlayer.transform.position.y < -20.0f) {
+				KillPlayer ();
+			}
+
 		}
+			
+
+		Debug.Log (level_won);
+		if (level_won == true) {
+			NextLevel ();
+		}
+
+
 	}
 }
