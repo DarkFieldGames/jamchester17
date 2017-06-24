@@ -13,7 +13,7 @@ public class PlayerProperties : MonoBehaviour {
 	public bool loosing_life = true;
 	// Use this for initialization
 	void Start () {
-		nextUpdateTime = 0.0f;
+		nextUpdateTime = Time.time;
 	}
 
 	// Update is called once per frame
