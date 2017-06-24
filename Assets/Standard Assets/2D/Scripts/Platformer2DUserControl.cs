@@ -9,8 +9,6 @@ namespace UnityStandardAssets._2D
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
-		private bool _grab;
-
 
         private void Awake()
         {
