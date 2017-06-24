@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 224168790616527376}
   - component: {fileID: 222508503978486484}
   - component: {fileID: 114779280481090502}
+  - component: {fileID: 114800206978175108}
   m_Layer: 5
   m_Name: PeopleCounter
   m_TagString: Untagged
@@ -241,6 +242,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 10
+--- !u!114 &114800206978175108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1303377166669228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602272c2238aaef409807112634781df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114842166422155760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -537,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.7}
   m_AnchorMax: {x: 0.5, y: 0.7}
-  m_AnchoredPosition: {x: -0.000002861023, y: 200}
+  m_AnchoredPosition: {x: -0.000002861023, y: 222.99997}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224504292384723522
