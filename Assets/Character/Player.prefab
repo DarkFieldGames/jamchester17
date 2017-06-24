@@ -253,8 +253,8 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
-  k_GroundedRadius: 1
-  k_CeilingRadius: 1
+  k_GroundedRadius: 0.6
+  k_CeilingRadius: 0.6
 --- !u!114 &114784513532672336
 MonoBehaviour:
   m_ObjectHideFlags: 1
