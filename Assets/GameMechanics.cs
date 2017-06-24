@@ -43,11 +43,19 @@ public class GameMechanics : MonoBehaviour {
 			lives = 2;
 			healthLossRate = 0.2f;
 			level_description = "Stand on the shoulders of giants. Or grab the box with Q.";
+			next_level = "level2";
 		}
 		if (scene.name == "level2") {
 			lives = 3;
-			healthLossRate = 1.0f;
+			healthLossRate = 0.5f;
 			level_description = "Let the efforts of the past generation guide you forward. Press 'K' to give your life to help.";
+			next_level = "level3";
+		}
+		if (scene.name == "level3") {
+			lives = 5;
+			healthLossRate = 0.1f;
+			level_description = "One generations pain is another generations gain.";
+			next_level = "level3";
 		}
 	}
 
