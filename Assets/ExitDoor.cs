@@ -17,7 +17,8 @@ public class ExitDoor : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D target)
 	{
-		if (target.transform.parent.tag == "Player") {
+		Debug.Log (target);
+		if (target.transform.tag == "Player") {
 			Debug.Log ("winner");
 			GameMechanics gamemech = gamemechanics.GetComponent<GameMechanics> ();
 			gamemech.level_won = true;
