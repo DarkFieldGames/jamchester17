@@ -85,13 +85,6 @@ public class Grabbing : MonoBehaviour
 		else
 		{
 			SetGrabObjectPhysics(RigidbodyType2D.Dynamic);
-
-			GrabbedObject.position = HoldPoint.position;
-
-
-			var body = GrabbedObject.GetComponent<Rigidbody2D>();
-			body.AddForce(new Vector3(3f, 2f), ForceMode2D.Impulse);
-
 			GrabbedObject = null;
 		}
 	}
