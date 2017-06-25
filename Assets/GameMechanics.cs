@@ -92,7 +92,7 @@ public class GameMechanics : MonoBehaviour {
 			ActivePlayer.GetComponent<PlayerProperties>().health = 100.0f;
 
 			
-			ActivePlayer.GetComponentInChildren<PoseSwitcher>().Color = Colors[currentColorIndex % Colors.Length];
+		//	ActivePlayer.GetComponentInChildren<PoseSwitcher>().Color = Colors[currentColorIndex % Colors.Length];
 
 			camera_logic = Camera.GetComponent<Camera2DFollow>();
 			camera_logic.target = ActivePlayer.transform;
