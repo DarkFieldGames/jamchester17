@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scale: 10
+  MaxScale: 1.5
   Boost: 0
 --- !u!114 &114553728932215194
 MonoBehaviour:

@@ -7,6 +7,8 @@ public class FadeIn : MonoBehaviour {
 
 	[Range(0.5f, 5f)] public float Scale = 5;
 
+	public float MaxScale = 5;
+
 	private RectTransform rectangle;
 
 	public float Boost = 0;
@@ -28,7 +30,7 @@ public class FadeIn : MonoBehaviour {
 
 		var percentage = properties.health / properties.maxHealth;
 
-		Scale = Mathf.Max(4.5f * (Mathf.Sin(percentage))  + 0.5f - Boost, 0.5f);
+		Scale = Mathf.Clamp(4.5f * (Mathf.Sin(percentage))  + 0.5f - Boost, 0.5f, MaxScale);
 
 		rectangle.localScale = new Vector3(Scale, Scale);
 
