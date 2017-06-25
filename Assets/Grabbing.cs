@@ -14,6 +14,8 @@ public class Grabbing : MonoBehaviour
 	public Transform HoldPoint;
 	public Transform DropPoint;
 
+	public PoseSwitcher poseSwitcher;
+
 	private void Awake()
 	{
 		//HoldPoint = gameObject.transform.Find("HoldPoint");
@@ -55,6 +57,8 @@ public class Grabbing : MonoBehaviour
 		GrabbedObject.localPosition = Vector3.zero;
 
 		SetGrabObjectPhysics(RigidbodyType2D.Kinematic);
+
+		poseSwitcher.SetPose(PoseType.carry);
 	}
 
 	private void SetGrabObjectPhysics(RigidbodyType2D type)
@@ -86,6 +90,7 @@ public class Grabbing : MonoBehaviour
 		{
 			SetGrabObjectPhysics(RigidbodyType2D.Dynamic);
 			GrabbedObject = null;
+			poseSwitcher.SetPose(PoseType.idle);
 		}
 	}
 
