@@ -14,7 +14,7 @@ public class MenuMechanics : MonoBehaviour {
 	}
 
 	public void ExitGame(){
-		Application.Quit ();
+		Application.Quit();
 	}
 
 }
