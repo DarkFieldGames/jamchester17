@@ -102,11 +102,13 @@ public class Grabbing : MonoBehaviour
 
 	private void OnDrawGizmosSelected()
 	{
+		/*
 		UnityEditor.Handles.color = Color.blue;
 		UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.forward, GrabRadius);
 
 		UnityEditor.Handles.color = Color.cyan;
 		UnityEditor.Handles.DrawWireCube(HoldPoint.position, new Vector3(1, 1));
 		UnityEditor.Handles.DrawWireCube(DropPoint.position, new Vector3(1, 1));
+		*/
 	}
 }

@@ -129,12 +129,14 @@ namespace UnityStandardAssets._2D
 
 		private void OnDrawGizmosSelected()
 		{
+			/*
 			m_GroundCheck = transform.Find("GroundCheck");
 			m_CeilingCheck = transform.Find("CeilingCheck");
 
 			UnityEditor.Handles.color = Color.green;
 			UnityEditor.Handles.DrawWireDisc(m_CeilingCheck.position, Vector3.forward, k_CeilingRadius);
 			UnityEditor.Handles.DrawWireDisc(m_GroundCheck.position, Vector3.forward, k_GroundedRadius);
+			*/
 		}
 	}
 }
