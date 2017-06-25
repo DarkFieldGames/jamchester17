@@ -164,7 +164,7 @@ Transform:
   m_GameObject: {fileID: 1238567971834856}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7350152, y: 0.7350148, z: 0.91876847}
+  m_LocalScale: {x: 0.5, y: 0.6, z: 0}
   m_Children:
   - {fileID: 4069884248609466}
   - {fileID: 4487454150981664}
@@ -191,7 +191,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937445049164168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.7, y: -4, z: 0}
+  m_LocalPosition: {x: -2.89, y: -4.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4132583592283252}
@@ -222,7 +222,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1043604727503882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.3, z: 0}
+  m_LocalPosition: {x: 0, y: 3.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4479587774041096}
@@ -394,12 +394,12 @@ MonoBehaviour:
   m_MaxSpeed: 10
   m_JumpForce: 400
   m_CrouchSpeed: 0.36
-  m_AirControl: 0
+  m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967295
-  k_GroundedRadius: 0.2
-  k_CeilingRadius: 0.01
+    m_Bits: 4294967039
+  k_GroundedRadius: 1
+  k_CeilingRadius: 1
   PoseSwitcher: {fileID: 114017299637215680}
 --- !u!114 &114784513532672336
 MonoBehaviour:

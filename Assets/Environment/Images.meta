@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Environment/Images.meta
-guid: 795c0b4df0bf54030a37ab47f1b0427e
+guid: b13fb14e5c9d41d4a95b2af8d3ad64c1
 folderAsset: yes
-timeCreated: 1498336506
-=======
-guid: a83d1ffb04a11fe4cbdd11ec87c6dfe4
-folderAsset: yes
-timeCreated: 1498335738
->>>>>>> origin/master:Assets/Environment/Images.meta
+timeCreated: 1498335993
 licenseType: Free
 DefaultImporter:
   userData: 
