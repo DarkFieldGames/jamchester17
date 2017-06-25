@@ -98,10 +98,10 @@ public class GameMechanics : MonoBehaviour {
 			camera_logic.target = ActivePlayer.transform;
 			lives = lives - 1;
 
-			var deadPoseSwitcher = DeadPlayer.GetComponentInChildren<PoseSwitcher>();
+			//var deadPoseSwitcher = DeadPlayer.GetComponentInChildren<PoseSwitcher>();
 
-			deadPoseSwitcher.Color = dead_color;
-			deadPoseSwitcher.CurrentType = PoseType.death;
+			//deadPoseSwitcher.Color = dead_color;
+			//deadPoseSwitcher.CurrentType = PoseType.death;
 			currentColorIndex++;
 		}
 		Debug.Log (lives);
