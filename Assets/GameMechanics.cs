@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets._2D;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameMechanics : MonoBehaviour {
 
@@ -25,6 +26,9 @@ public class GameMechanics : MonoBehaviour {
 
 	private GameObject Camera;
 	private Camera2DFollow camera_logic;
+
+	public Color[] Colors = new Color[0];
+	private Int32 currentColorIndex = 0;
 
 	// Use this for initialization
 	void Awake () {
@@ -66,18 +70,30 @@ public class GameMechanics : MonoBehaviour {
 			Debug.Log ("Game Over");
 			Debug.Log (lives);
 		} else {
+
 			player_x = ActivePlayer.transform.position.x;
 			player_y = ActivePlayer.transform.position.y;
 			Vector2 dead_pos = new Vector2 (player_x, player_y);
 			Vector2 spawn_pos = new Vector2 (spawn_x, spawn_y);
+			Color dead_color = ActivePlayer.GetComponentInChildren<PoseSwitcher>().Color;
 			Instantiate (NewPlayer, spawn_pos, Quaternion.identity);
 			Destroy (ActivePlayer);
 			Instantiate (DeadPlayer, dead_pos, Quaternion.identity);
 			ActivePlayer = GameObject.FindGameObjectWithTag("Player"); // update active player
 			ActivePlayer.GetComponent<PlayerProperties>().health = 100.0f;
+
+			
+			ActivePlayer.GetComponentInChildren<PoseSwitcher>().Color = Colors[currentColorIndex % Colors.Length];
+
 			camera_logic = Camera.GetComponent<Camera2DFollow>();
 			camera_logic.target = ActivePlayer.transform;
 			lives = lives - 1;
+
+			var deadPoseSwitcher = DeadPlayer.GetComponentInChildren<PoseSwitcher>();
+
+			deadPoseSwitcher.Color = dead_color;
+			deadPoseSwitcher.CurrentType = PoseType.death;
+			currentColorIndex++;
 		}
 		Debug.Log (lives);
 		//GameObject.FindGameObjectWithTag("Player"); // always refresh who the player is incase it dies
