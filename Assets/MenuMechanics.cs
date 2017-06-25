@@ -13,4 +13,8 @@ public class MenuMechanics : MonoBehaviour {
 		SceneManager.LoadScene(next_level);	
 	}
 
+	public void ExitGame(){
+		Application.Quit ();
+	}
+
 }

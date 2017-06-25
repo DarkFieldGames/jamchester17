@@ -55,7 +55,15 @@ public class GameMechanics : MonoBehaviour {
 			lives = 5;
 			healthLossRate = 0.1f;
 			level_description = "One generations pain is another generations gain.";
-			next_level = "level3";
+			next_level = "level4";
+		}
+		if (scene.name == "level4") {
+			lives = 25;
+			healthLossRate = 0.60f;
+			spawn_x = 0.0f;
+			spawn_y = 85.0f;
+			level_description = "Generations into the void.";
+			next_level = "menu _end_happy";
 		}
 	}
 
@@ -65,6 +73,7 @@ public class GameMechanics : MonoBehaviour {
 			Destroy (ActivePlayer);
 			Debug.Log ("Game Over");
 			Debug.Log (lives);
+			SceneManager.LoadScene("menu _end");
 		} else {
 			player_x = ActivePlayer.transform.position.x;
 			player_y = ActivePlayer.transform.position.y;
